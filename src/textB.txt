@@ -1,31 +1,6 @@
-Das ist ein ganz anderer Text aber auch mit mehreren Schablonen, die so aussehen: [test01|test02]. 
+Sehr geehrte Damen und Herren,
 
-Hier ist noch eine tolle Schablone: [test03|test04].
+dem Versicherten [A. Müller|Alexander Müller] wird [vorgeworfen|zur Last gelegt], für den Unfall [veratwortlich|schuldig] zu sein. Nach [sorgfältiger Überprüfung|umfangreicher Kontrolle] wurde [ermittelt|festgestellt], dass der Versicherte die [volle|komplette] Schuld an [dem besagten Vorfall|der beschreibenen Tat] [trägt|verantwortet] und dieser durch eine [grob fahrlässige|vorsätzliche] Handlung [verursacht|bewirkt] wurde. Die Versicherung [übernimmt|zahlt] daher keinen [Anteil|Teil] der [entstandenen|verursachten] Kosten. Der Versicherte ist damit zum [vollständigen|restlosen] Ersatz des Schadens [verpflichtet|aufgerufen].
 
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine tolle Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
+Mit [freundlichen|hochachtungsvollen] Grüßen
+XYZ

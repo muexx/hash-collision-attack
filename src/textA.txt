@@ -1,31 +1,6 @@
-Das ist ein Testtext mit mehreren Schablonen, die so aussehen: [test01|test02]. 
+Sehr geehrte Damen und Herren,
 
-Hier ist noch eine Schablone: [test03|test04].
+dem Versicherten [Herr A. Müller|Herr Alexander Müller] wird [zugesichert|bestätigt], nicht für den Unfall [belastet|zur Rechenschaft gezogen]. Nach [erstelltem|angefertigtem] Gutachten wurde [bestätigt|zugesichert], dass der Versicherte [keine|keinerlei] Schuld an [dem Unfall|dem Ereignis] [hat|besitzt] und durch ein [regelkonformes|korrektes] Handeln keinen [Verstoß|Fehler] begangen hat. Die Versicherung [erstattet|trägt] daher die [vollen|gesamten] Kosten der [Schadensbehebung|Reparaturleistungen]. Der Versicherte ist damit zu [keiner|keinerlei] Übernahme der Kosten [verpflichtet|berufen].
 
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
-
-Hier ist noch eine Schablone: [test03|test04].
+Mit [freundlichen|besten] Grüßen
+XYZ

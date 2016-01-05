@@ -60,20 +60,8 @@ public class HashCollisionAttack {
 			System.out.println("keine Kollision gefunden");
 		}
 
-		System.out.println("Laufszeit: " + (timeEnd - timeStart) + " Millisek."); 
+		System.out.println("Laufszeit: " + (timeEnd - timeStart) + " Millisek."); 		
 		
-		
-		byte[] hashA = generateHash(textA.getText(20914));
-		int hashAsIntA = java.nio.ByteBuffer.wrap(hashA).getInt();
-		
-		byte[] hashB = generateHash(textB.getText(61914));
-		int hashAsIntB = java.nio.ByteBuffer.wrap(hashB).getInt();
-		
-		System.out.println(hashAsIntA+" : "+hashAsIntB);
-		System.out.println(Integer.toBinaryString(hashAsIntA));
-		System.out.println(Integer.toBinaryString(hashAsIntB));
-		System.out.println(Integer.toHexString(hashAsIntA));
-		System.out.println(Integer.toHexString(hashAsIntB));
 	}
 
 	public static byte[] generateHash(String text) throws NoSuchAlgorithmException {
