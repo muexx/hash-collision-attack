@@ -1,0 +1,31 @@
+Das ist ein Testtext mit mehreren Schablonen, die so aussehen: [test01|test02]. 
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
+
+Hier ist noch eine Schablone: [test03|test04].
