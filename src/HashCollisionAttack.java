@@ -1,15 +1,21 @@
+import java.io.FileNotFoundException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
+//import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.apache.commons.lang3.text.WordUtils;
 
 public class HashCollisionAttack {
 
-	public static void main(String[] args) throws NoSuchAlgorithmException {
+	public static void main(String[] args) throws NoSuchAlgorithmException, FileNotFoundException {
 
-		ArrayList<Integer> digests = new ArrayList<Integer>();
+		//ArrayList<Integer> digests = new ArrayList<Integer>();
+		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 
 		int n = 16;
 
+		// TODO Exception handling
 		TextTemplate textA = new TextTemplate("src/textA.txt", n);
 		TextTemplate textB = new TextTemplate("src/textB.txt", n);
 
@@ -21,7 +27,8 @@ public class HashCollisionAttack {
 		for (int i = 0; i < number; i++) {
 			byte[] hash = generateHash(textA.getText(i));
 			int hashAsInt = java.nio.ByteBuffer.wrap(hash).getInt();
-			digests.add(i, hashAsInt);
+			//digests.add(i, hashAsInt);
+			hashMap.put(hashAsInt, i);
 
 		}
 
@@ -31,7 +38,8 @@ public class HashCollisionAttack {
 			byte[] hash = generateHash(textB.getText(i));
 			int hashAsInt = java.nio.ByteBuffer.wrap(hash).getInt();
 
-			if (digests.contains(hashAsInt)) {
+			//if (digests.contains(hashAsInt)) {
+			if (hashMap.containsKey(hashAsInt)) {	
 				collision = true;
 
 				System.out.print("Hash with collision: ");
@@ -39,14 +47,23 @@ public class HashCollisionAttack {
 					System.out.printf("%02x", b);
 				System.out.println();
 
-				int configOfB =  digests.indexOf(hashAsInt);
+				//int configOfB =  digests.indexOf(hashAsInt);
+				int configOfB =  hashMap.get(hashAsInt);
 				System.out.println("Configuraton text A: "+ configOfB +" : "+ Integer.toBinaryString(configOfB));
 
 				System.out.println("Configuraton text B: "+ i +" : "+ Integer.toBinaryString(i));
 				System.out.println();
-
+				
+				System.out.println("\n*** Version of text A: ********************************************************");
+				System.out.println(WordUtils.wrap(textA.getText(i), 80));
+				System.out.println("*******************************************************************************");
+				
+				System.out.println("\n*** Version of text B: ********************************************************");
+				System.out.println(WordUtils.wrap(textB.getText(configOfB), 80));
+				System.out.println("*******************************************************************************");
+				
 				// stop after the first collision
-				break;
+				//break;
 			}
 
 		}
