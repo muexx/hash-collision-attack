@@ -4,13 +4,11 @@ import java.security.NoSuchAlgorithmException;
 //import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.apache.commons.lang3.text.WordUtils;
-
 public class HashCollisionAttack {
 
 	public static void main(String[] args) throws NoSuchAlgorithmException, FileNotFoundException {
 
-		//ArrayList<Integer> digests = new ArrayList<Integer>();
+		//ArrayList<Integer> hashList = new ArrayList<Integer>();
 		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 
 		int n = 16;
@@ -27,7 +25,7 @@ public class HashCollisionAttack {
 		for (int i = 0; i < number; i++) {
 			byte[] hash = generateHash(textA.getText(i));
 			int hashAsInt = java.nio.ByteBuffer.wrap(hash).getInt();
-			//digests.add(i, hashAsInt);
+			//hashList.add(i, hashAsInt);
 			hashMap.put(hashAsInt, i);
 
 		}
@@ -38,7 +36,7 @@ public class HashCollisionAttack {
 			byte[] hash = generateHash(textB.getText(i));
 			int hashAsInt = java.nio.ByteBuffer.wrap(hash).getInt();
 
-			//if (digests.contains(hashAsInt)) {
+			//if (hashList.contains(hashAsInt)) {
 			if (hashMap.containsKey(hashAsInt)) {	
 				collision = true;
 
@@ -47,20 +45,18 @@ public class HashCollisionAttack {
 					System.out.printf("%02x", b);
 				System.out.println();
 
-				//int configOfB =  digests.indexOf(hashAsInt);
-				int configOfB =  hashMap.get(hashAsInt);
-				System.out.println("Configuraton text A: "+ configOfB +" : "+ Integer.toBinaryString(configOfB));
+				//int configOfA =  hashList.indexOf(hashAsInt);
+				int configOfA =  hashMap.get(hashAsInt);
+				
+				System.out.println("Configuraton text A: "+   String.format("%16s", Integer.toBinaryString(configOfA)).replace(' ', '0')+" : "+configOfA);
+				System.out.println("Configuraton text B: "+  String.format("%16s", Integer.toBinaryString(i)).replace(' ', '0') +" : "+i);
 
-				System.out.println("Configuraton text B: "+ i +" : "+ Integer.toBinaryString(i));
-				System.out.println();
 				
-				System.out.println("\n*** Version of text A: ********************************************************");
-				System.out.println(WordUtils.wrap(textA.getText(i), 80));
-				System.out.println("*******************************************************************************");
+				System.out.println("\n\n Version of text A: ********************************************************");
+				System.out.println(textA.getText(configOfA));
 				
-				System.out.println("\n*** Version of text B: ********************************************************");
-				System.out.println(WordUtils.wrap(textB.getText(configOfB), 80));
-				System.out.println("*******************************************************************************");
+				System.out.println("\n\n Version of text B: ********************************************************");
+				System.out.println(textB.getText(i));
 				
 				// stop after the first collision
 				//break;
@@ -114,23 +110,5 @@ public class HashCollisionAttack {
 		}
 		return result;
 	}
-
-	// print byte array in bits
-	// for (byte b : bytearray) System.out.println(Integer.toBinaryString(b &
-	// 255 | 256).substring(1));
-
-	// print byte array as hex number
-	// for ( byte b : bytearray ) System.out.printf( "%02x", b );
-
-	/*
-	 * // print bits from a byte byte x = (byte) 5; byte y = (byte) 16; byte d =
-	 * (byte) (x ^ y); System.out.println(Integer.toBinaryString(d & 255 |
-	 * 256).substring(1));
-	 */
-
-	/*
-	 * // get integer from an byte array byte[] result = new byte[4]; int q =
-	 * java.nio.ByteBuffer.wrap(result).getInt(); System.out.println(q);
-	 */
 
 }
